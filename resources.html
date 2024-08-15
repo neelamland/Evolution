@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Your Website Title</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f9f9f9; 
+        }
+
+        .content-container {
+            margin: 0 auto; 
+            padding: 20px; 
+            max-width: 1200px; 
+            border: 1px solid #ccc; 
+            box-sizing: border-box; 
+        }
+
+        /* Add styles for the video section */
+        .video-container {
+            display: flex; 
+            justify-content: center;
+            margin-top: 20px; 
+        }
+
+        .video-container iframe {
+            width: 320px; 
+            height: 180px; 
+            border: 5px solid white; 
+            box-shadow: 0 0 5px black; 
+            border-radius: 10px;
+            margin: 10px; 
+        }
+
+        /* Content Section Styles */
+        .content {
+            margin: 20px; 
+        }
+        
+        /* Image Styles for right alignment */
+        .image-right {
+            float: right; /* Fixed float issue */
+            margin-left: 50px;
+            max-width: 150px; 
+            height: auto; 
+        }
+
+        /* Clearfix for floated images */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="Homepage.html">
+            <img src="EVOLUTIONwhite-removebg-preview.png" alt="Evolution Logo" class="logo">
+        </a>
+        <a href="methods.html">Methods</a>
+        <a href="success.html">Success Stories</a>
+        <a href="resources.html">Resources</a>
+    </nav>
+</header>
+<main>
+    <div class="content-container"> <!-- Added content-container wrapper -->
+        <h1 style="text-align: center;">Resources</h1>
+
+        <div class="content clearfix">
+            <h3 style="text-align: center;">The Mountain is You</h3>
+            <img src="the mountain is you.webp" alt="The Mountain is You" class="image-right">
+            <p>"The Mountain Is You" by Brianna Wiest reveals that the biggest obstacles we face are often created by our own minds. This empowering book teaches us how to identify and conquer self-sabotage, transforming our fears into fuel for growth. Wiest inspires readers to embrace their challenges, turning them into opportunities for self-discovery and resilience. Climbing these inner mountains leads to personal transformation and a more fulfilled life!</p>
+        </div>
+
+        <div class="content clearfix">
+            <h3>Rich Dad, Poor Dad</h3>
+            <img src="rich.jfif" alt="Rich Dad Poor Dad" class="image-right">
+            <p>"Rich Dad Poor Dad" by Robert Kiyosaki is a groundbreaking personal finance book that contrasts the financial philosophies of two father figures: his biological dad (Poor Dad) and his best friend’s father (Rich Dad). Kiyosaki emphasizes the importance of financial literacy, investing, and entrepreneurship over traditional education and job security. This compelling narrative challenges conventional beliefs about money, encouraging readers to think differently and take control of their financial futures. Ultimately, it’s a call to shift mindsets, build wealth, and achieve financial independence!</p>
+        </div>
+
+        <div class="content clearfix">
+            <h3>Atomic Habits</h3>
+            <img src="habits.jfif" alt="Atomic Habits" class="image-right">
+            <p>"Atomic Habits" by James Clear is a transformative guide to building good habits and breaking bad ones. Clear argues that small, incremental changes can lead to remarkable results over time. By focusing on the systems and processes that drive behavior, he illustrates how tiny habits can compound into significant improvements. With practical strategies, real-life examples, and actionable insights, Clear empowers readers to take control of their habits and create a life of purpose and success. It's a must-read for anyone looking to make lasting changes in their personal or professional life!</p>
+        </div>
+
+        <div class="content clearfix">
+            <h3>Therapy</h3>
+            <img src="therapy.png" alt="Therapy" class="image-right">
+            <p>Therapy is a powerful journey toward self-discovery and healing, and it's more accessible than ever! With platforms like BetterHelp, you can connect with licensed therapists at your convenience, allowing you to explore your thoughts and feelings from the comfort of your home. In the UK, the NHS provides fantastic free counseling services, while organizations like Mind and Samaritans offer vital support tailored to individual needs. Plus, many employers recognize the importance of mental well-being and provide Employee Assistance Programs (EAPs) to help you navigate life's challenges. With innovative solutions like teletherapy from Talkspace, prioritizing your mental health has never been easier or more exciting. Embrace the power of therapy and unlock your potential today!</p>
+        </div>
+
+        <div class="content clearfix">
+            <h3>The Five Minute Journal</h3>
+            <img src="journal.jpg" alt="The Five Minute Journal" class="image-right">
+            <p>The 5 Minute Journal is your secret weapon for unleashing positivity and transforming your mindset! In just five minutes a day, this powerful tool supercharges your mornings and winds down your evenings with intentional reflection. Start your day by jotting down three things you’re grateful for, setting fierce intentions, and visualizing your ideal day ahead—talk about a morning boost! When the sun sets, take a moment to celebrate three amazing things that happened and identify how you can level up tomorrow. This daily practice not only ignites your gratitude but also sharpens your focus and elevates your happiness. Grab your 5 Minute Journal and get ready to unlock a brighter, more vibrant you!</p>
+        </div> <!-- End of the last content clearfix -->
+    </div> <!-- End of content-container -->
+</main>
+
+<footer>
+    <p>&copy; 2024 Evolution. All rights reserved.</p>
+    <div class="video-container">
+        <!-- Embed YouTube videos side by side -->
+        <div>
+            <iframe src="https://www.youtube.com/embed/z7e7gtU3PHY" title="The Mountain is You" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe src="https://www.youtube.com/embed/H14bBuluwB8" title="Rich Dad, Poor Dad" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe src="https://www.youtube.com/embed/D-RGg4puMOM" title="Atomic Habits" allowfullscreen></iframe>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

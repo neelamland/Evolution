@@ -1,0 +1,174 @@
+/* General Body Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: auto; 
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;   
+    line-height: 1.6;
+}
+
+p {
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+}
+
+/* Header Styles */
+header {
+    background-color: #b99a5e;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1000; 
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Darker shadow for contrast */
+    background-color: #b99a5e; /* Ensure this matches header color */
+}
+
+/* Logo Styles */
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Navbar Links */
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content Styles */
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #333;
+}
+
+#biglogo {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Headings Styles */
+h2, h4 {
+    text-align: center;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    z-index: -1; 
+}
+
+/* Slideshow */
+.slideshow {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide:first-child {
+    opacity: 1;
+}
+
+/* Footer Styles */
+footer {
+    position: relative;
+    z-index: 1;
+    background-color: #b99a5e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* General Image Styles for Methods Page */
+.image-right {
+    max-width: 300px; 
+    height: 200; 
+    float: left; 
+    margin-left: 20px; 
+    margin-bottom: 20px;
+}
+
+/* Clearfix for content container */
+.content-container::after {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+/* Content Container Styles */
+.content-container {
+    margin: 20px auto; 
+    padding: 20px;
+    max-width: 1200px; 
+    border: 1px solid #ccc; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-sizing: border-box;
+}
+
+.star {
+    position: absolute;
+    width: 10px; /* Width of the star */
+    height: 10px; /* Height of the star */
+    border-radius: 50%; /* Make it circular */
+    background-color: rgba(236, 236, 14, 0.945); /* Soft yellow color */
+    box-shadow: 0 0 10px rgb(228, 228, 4), 0 0 20px rgb(255, 255, 1); /* Glow effect */
+    pointer-events: none; /* Make sure stars don't block other mouse events */
+    transition: transform 0.5s, opacity 0.5s; /* Smooth transition */
+    position: absolute;
+    width: 25px; /* Adjust size */
+    height: 30px; /* Adjust size */
+    background-color: rgba(236, 236, 11, 0.938); /* Soft yellow color */
+    clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+    ); /* Create a star shape */
+    box-shadow: 0 0 10px rgba(245, 229, 5, 0.952), 0 0 20px rgba(245, 245, 5, 0.945); /* Glow effect */
+    pointer-events: none; /* Make sure stars don't block other mouse events */
+    transition: transform 0.7s, opacity 10s; /* Smooth transition */
+    opacity: 1; /* Start fully opaque */
+}
